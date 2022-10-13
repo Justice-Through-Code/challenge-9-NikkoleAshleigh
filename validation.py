@@ -7,19 +7,19 @@
 # - once a valid number is received, return that number
 
 def validate_user_input():
-    user_num = input('Please enter a number ')
+    users_num = input('Please enter a number ')
     try:
-        return int(user_num)
+        return int(users_num)
     except ValueError:
         print('You did not enter a valid number, please try again')
         return validate_user_input()
-        
+
 # NOTE: What type of error does python throw if you try to turn a non-number string into an integer?
 # Test it out (or google it!) to see which one. Specifically catch that exception in your code.
 # 1.2 TODO: Once you are done, uncomment the two lines below to ensure that your code works as expected
 
-user_num = validate_user_input()
-print(f'The number the user entered is {user_num}.')
+# users_num = validate_user_input()
+# print(f'The number the user entered is {users_num}.')
 
 # 2.1 TODO: Create a function called print_tenth_item that will
 # - take in a list of items as a parameter called `top_ten`
@@ -35,5 +35,5 @@ def print_tenth_item(top_ten):
         print("N/A")
 
 # 2.2 TODO: Once you are done, uncomment the two lines below to ensure that your code works as expected
-print_tenth_item(['a', 'b', 'c'])  # Should print out that there are not ten items in the list
-print_tenth_item([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])  # Should print out the 10th item in the list
+# print_tenth_item(['a', 'b', 'c'])  # Should print out that there are not ten items in the list
+# print_tenth_item([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])  # Should print out the 10th item in the list
